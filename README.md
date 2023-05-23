@@ -62,3 +62,32 @@ Ps 명령어 :
 *  $ ps auxfww : 실행중인 프로세스 트리구조로 나타냄 + 실행중인 모든  
 ![image](https://github.com/janmangdong/hello/assets/133829891/0169f323-ce69-4dfb-9877-74eaf50a3871)
 
+# About jobs
+: 작업의 상태를 표시하는 명령어. *(작업이 중지된 상태, 백그라운드로 진행 중인 작업 상태 등등 ..)*
+
+**jobs [옵션] **[ID]
+
+jobs 명령어 :
+* jobs -l : 프로세스 그룹 ID를 state 필드 앞에 출력
+* jobs -n : 프로세스 그룹 중에 대표 프로세스 ID 출력
+* jobs -p : 각 프로세스 ID 한 행씩 출력
+* jobs command : 지정한 명령어 실행
+
+jobs 상태 :
+* Running : 작업 계속 진행중
+* Done : 작업 완료되어 0을 반환하고 종료됐음
+* Stopped : 작업 일시 중단
+* Stopped(SIGTSTP) : SIGTSTP 신호가 작업 일시 중단
+* Stopped(SIGTTIN) : SIGTTIN 신호가 작업 일시 중단
+* Stopped(SIGTSTOP) : SIGTSTOP 신호가 작업 일시 중단
+* Stopped(SIGSTTOU) : SIGSTTOU 신호가 작업 일시 중단
+
+# About Kill
+: 보통 프로세스를 죽일 때 사용하는 명령어. *(내부적으로 프로세스에 시그널을 보내 원하는 작업을 하도록 실행시키는 명령어)*
+
+**$ kill [죽은 프로세스의 pid] *(ps 명령어를 통해 pid를 얻어 실행시키면 종료시킬 수 있음)
+
+kill 명령어 :
+* kill -l : 지원하는 시그널 목록 확인 가능
+* kill -s [signal] [pid] : default 시그널 보내기
+* kill -s KILL [pid] : 강제로 kill하기
