@@ -60,3 +60,5 @@ Ps 명령어 :
 *  $ ps auxf : 실행중인 프로세스 트리구조로 확인
 ![image](https://github.com/janmangdong/hello/assets/133829891/f67e0a73-5543-4537-877b-6471732d5b5d)
 *  $ ps auxfww : 실행중인 프로세스 트리구조로 나타냄 + 실행중인 모든  
+![image](https://github.com/janmangdong/hello/assets/133829891/796d45da-639e-469a-bb32-ee7f19aeea3c)
+
