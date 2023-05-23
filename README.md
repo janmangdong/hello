@@ -55,6 +55,7 @@ Ps 명령어 :
 * $ ps -ef : 모든 프로세스를 풀 포맷으로 출력
 ![image](https://github.com/janmangdong/hello/assets/133829891/dc288d64-d3f3-4df8-9b51-edbb8fc38f9f)
 * $ ps -ef | grep '이름': '이름'의 프로세스 작동 확인 (실행 유저, 프로세스 ID, 부모 프로세스 FID, CPU 사용량, 시작 시간, 프로세스 제어 위치, 작동 시간, 명령어 출력)
-*  $ ps aux : 실행중인 모든 프로세스 확인
+* $ ps aux : 실행중인 모든 프로세스 확인
+![image](https://github.com/janmangdong/hello/assets/133829891/c2791d87-62e1-4adb-af92-40df55b6f496)
 *  $ ps auxf : 실행중인 프로세스 트리구조로 확인
 *  $ ps auxfww : 실행중인 프로세스 트리구조로 나타냄 + 실행중인 모든  
